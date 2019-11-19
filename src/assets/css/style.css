@@ -1,0 +1,415 @@
+/* 公共规约:所有样式以bl开头
+  按模块和组件划分 */
+
+ /* 全局设定 */
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	/* 将原色的内外边距算入总的尺寸 */
+ 	box-sizing: border-box;
+ 	color: #393D49;
+ }
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+ a {
+ 	text-decoration: none;
+ }
+
+ ul {
+ 	list-style: none;
+ }
+
+ /* 布局设定 */
+ /* flex布局,居中对齐 */
+ .bl-df-jcenter {
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .bl-df-center {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+/* flex布局,垂直方向两端对齐 */
+ .bl-df-between {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+ 
+ .bl-df-around {
+	 display: flex;
+	 justify-content: space-around;
+	 align-items: center;
+ }
+ 
+/* flex布局,垂直方向居上对齐 */
+.bl-df-between-up {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+ /* flex布局,垂直左对齐 */
+ .bl-df-c-center {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start;
+ 	align-items: flex-start;
+ }
+
+ /* flex布局,垂直方向居中对齐 */
+ .bl-df-c-jcenter {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ /* flex布局，水平方向左对齐 */
+ .bl-df-left {
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ }
+
+ /* flex布局，水平方向start */
+.bl-df-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+ /* flex布局， 水平方向右对齐 */
+ .bl-df-right {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ }
+
+ /* 流失布局,块状元素水平方向居中对齐 */
+ .bl-center {
+ 	display: block;
+ 	text-align: center;
+ }
+
+ /* 流失布局,块状元素水平方向左对齐 */
+ .bl-left {
+ 	display: block;
+ 	text-align: left;
+ }
+
+ /* 流失布局,块状元素水平方向右对齐 */
+ .bl-right {
+ 	display: block;
+ 	text-align: right;
+ }
+
+ /* 栅格布局 */
+ .bl-row {
+ 	display: flex;
+
+ }
+
+ /* 居中留白容器 */
+ .bl-container {
+ 	width: 70%;
+ 	margin: 0 auto;
+ }
+
+ .bl-col-12 {
+ 	flex: 1 1 100%;
+ }
+
+ .bl-col-8 {
+ 	flex: 1 1 66%;
+ }
+
+ .bl-col-6 {
+ 	flex: 1 1 50%;
+ }
+
+ .bl-col-4 {
+ 	flex: 1 1 33.333%;
+ }
+
+ .bl-col-3 {
+ 	flex: 1 1 23%;
+ }
+
+ .bl-col-2 {
+ 	flex: 1 1 16.6%;
+ }
+
+ .bl-col-1 {
+ 	flex: 1 1 8.3%;
+ }
+
+ /* 字体样式 */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+ 	font-weight: 600;
+ }
+
+ /* 标题字体 */
+ .bl-title {
+ 	font-size: 21px;
+ 	font-weight: 700;
+ 	color: #333;
+ }
+
+ /* 副标题字体 */
+ .bl-sub-title {
+ 	font-size: 14px;
+ 	color: #333;
+ }
+
+ /* 备注字体 */
+ .bl-meta {
+ 	font-size: 12px;
+ 	color: #969696;
+ }
+ 
+ /* 大字号 */
+ .bl-lg-font {
+	 font-size: 20px;
+	 color: #333;
+ }
+ 
+ /* 中等字号 */
+ .bl-md-font {
+	 font-size: 16px;
+	 color: #333;
+ }
+ 
+ /* 字体加粗 */
+ .bl-bd-font {
+	 font-weight: 550;
+ }
+ 
+ .bl-msm-font {
+	 font-size: 12px;
+ }
+ 
+ /* 小字号 */
+ .bl-sm-font {
+	 font-size: 10px;
+ }
+ 
+ /* 边距的设置 */
+ .bl-small-pd {
+	 padding: 5px 5px;
+ }
+ 
+.bl-md-pd {
+	padding: 10px 10px;
+} 
+
+/* 按钮样式的设置 */
+
+ /* 按钮基础样式 */
+ .bl-btn {
+ 	border: none;
+ 	outline: none;
+ 	cursor: pointer;
+ 	/* 不换行 */
+ 	white-space: nowrap;
+ }
+
+ /* 圆角按钮 */
+ .bl-btn-round {
+ 	border-radius: 20px;
+ 	margin: 10px 10px;
+ }
+
+ /* 原型按钮*/
+ .bl-btn-circle {
+ 	border-radius: 50%;
+ }
+
+ /* 按钮默认主题 */
+ .bl-btn-default {
+ 	background-color: #009688;
+ 	color: #fff;
+ }
+
+ /* 按钮禁用主题 */
+ .bl-btn-disable {
+ 	background-color: #ccc;
+ 	color: #fff;
+ }
+
+ /* 按钮警告主题 */
+ .bl-btn-warning {
+ 	background-color: #FFB800;
+ 	color: #fff;
+ }
+
+ /* 按钮尺寸 */
+ .bl-btn-lg {
+ 	width: 120px;
+ 	height: 40px;
+ }
+
+ .bl-btn-nomar {
+ 	width: 100px;
+ 	height: 35px;
+ }
+
+ .bl-btn-small {
+ 	width: 80px;
+ 	height: 30px;
+ }
+
+ /* 表单元素 */
+ .bl-input-box {
+ 	display: block;
+ 	height: 40px;
+ 	outline: none;
+ 	border: 1px solid #000000;
+ 	border-radius: 5px;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ }
+
+ /* 卡片样式 */
+ .bl-card {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ }
+
+ .bl-card-header {
+ 	flex: 0 0 30%;
+ }
+
+ .bl-card-body {
+ 	flex: 0 0 70%;
+ }
+
+ .bl-avatar {
+ 	height: 40px;
+ 	width: 40px;
+ }
+
+ hr {
+ 	color: #ddd;
+ 	width: 90%;
+ 	margin: 0 auto;
+ }
+
+ /* 阴影样式 */
+ .bl-shadow {
+ 	box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+ }
+
+ .carousel-wrap {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 260px;
+ 	overflow: hidden;
+ }
+
+ .slide-ul {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .slide-ul li {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .slide-ul li img {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .carousel-items {
+ 	z-index: 100;
+ 	position: relative;
+ 	top: -80px;
+ 	text-align: center;
+ 	font-size: 0;
+ }
+
+ .carousel-items span {
+ 	display: inline-block;
+ 	width: 50px;
+ 	height: 6px;
+ 	margin: 0 5px;
+ 	background-color: #eee;
+ 	cursor: pointer;
+ }
+
+ .carousel-items .active {
+ 	background-color: #FFA500;
+ }
+
+ /* 动画 */
+ .slide-enter-to {
+ 	transition: all 1s ease;
+ 	transform: translateX(0);
+ }
+
+ .slide-leave-active {
+ 	transition: all 1s ease;
+ 	transform: translateX(-100%)
+ }
+
+ .slide-enter {
+ 	transform: translateX(100%)
+ }
+
+ .slide-leave {
+ 	transform: translateX(0)
+ }
+
+/* logo设置 */
+.bl-logo {
+	height: 50px;
+	width: 50px;
+}
+
+/* 主页右边栏卡片样式 */
+.bl-right-sideCard {
+	width: 90%;
+	height: 80px;
+	border:1px solid;
+	margin-top: 10px;
+	padding: 5px 5px 5px;
+}
+
+/* 网页中头像设置 */
+.bl-content-avatar {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+.bl-ht-avatar {
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+/* 作者文章card */
+.bl-article-recommendation {
+		height: 160px;
+		width: 100%;
+		margin-top: 20px;
+}
